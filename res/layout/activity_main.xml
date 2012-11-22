@@ -1,0 +1,157 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+
+    
+    <!-- Row 1: Engine size -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:padding="5dip" >
+    
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:text="@string/engine_label_text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    <EditText
+	        android:id="@+id/engine_size_text"
+	        android:hint="@string/engine_size_text"
+	        android:ems="10"
+	        android:inputType="number" >
+	                <requestFocus />
+	     </EditText>
+	 </TableRow>
+     
+    
+	 <!-- Row 2: RPM -->   
+     <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:padding="5dip" >
+	    
+          <TextView
+	        android:id="@+id/textView4"
+	        android:text="@string/rpm_label_text"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+    	
+	     <EditText
+	        android:id="@+id/maximum_rpm_text"
+	        android:ems="10"
+	        android:hint="@string/maximum_rpm_text"
+	        android:inputType="number" />
+		</TableRow>
+	
+	<!-- Row 3: Button -->
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:padding="5dip"
+	     >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_span="2"
+            android:text="@string/button_calculate_cfm" 
+            android:layout_weight="1"/>
+        
+
+	    </TableRow>
+	     
+	
+    <!-- Row 4: Equation -->
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	        android:padding="5dip" >
+	    <TextView
+	        android:id="@+id/cfm_equation"
+	        android:text="@string/equation"
+	        android:layout_span="2" />
+			
+	    </TableRow>
+	   
+    <!-- Just a spacer -->
+    <View
+        android:layout_height="30dip"
+        android:background="#fff" />
+    
+     
+    <!--  Row 5: Results from here down -->
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:padding="5dip" 
+        >
+        
+        
+	    <TextView
+			
+	        android:id="@+id/label80"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:text="@string/ve80"
+	        android:layout_weight="1" />
+
+	    <TextView
+	        android:id="@+id/text80"
+	        android:layout_width="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:layout_weight="1"/>
+
+	</TableRow>
+	    
+      
+   <!-- Row 6 -->
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:padding="5dip" >
+	    <TextView
+	        android:id="@+id/label90"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:text="@string/ve90" 
+	        android:layout_weight="1"/>
+
+	    <TextView
+	        android:id="@+id/text90"
+	        android:layout_width="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:layout_weight="1"/>
+
+    </TableRow>
+    
+    <!-- Row 7 -->
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:padding="5dip" >
+	    <TextView
+	        android:id="@+id/label100"
+	        android:textAppearance="?android:attr/textAppearanceSmall" 
+	        android:text="@string/ve100" 
+	        android:layout_weight="1"/>
+
+	    <TextView
+	        android:id="@+id/text100"
+	        android:layout_width="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:layout_weight="1"/>
+
+	</TableRow>
+	
+	<!-- End -->
+    
+    
+</TableLayout>
+
+
+    

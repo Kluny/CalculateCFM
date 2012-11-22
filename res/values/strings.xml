@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CalculateCFM</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="engine_label_text">Engine Size</string>
+    <string name="engine_size_text">CC</string>
+    
+    <string name="rpm_label_text">Redline RPM</string>
+	<string name="maximum_rpm_text">RPM</string>
+	<string name="button_calculate_cfm">Calculate</string>
+	<string name="equation">(CC x RPM)/3456) * VE</string>
+	
+	<string name="ve80">Stock engine, ~80% VE: </string>
+	<string name="ve90">Race engine, ~90% VE: </string>
+	<string name="ve100">Magical engine, 100% VE: </string>
+	
+		
+<!--  	<string name="title_activity_display_message">Result</string> -->
+	
+</resources>
