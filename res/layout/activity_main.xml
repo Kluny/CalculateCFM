@@ -3,7 +3,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context=".MainActivity" >
-
     
     <!-- Row 1: Engine size -->
     <TableRow
@@ -84,35 +83,33 @@
     
      
     <!--  Row 5: Results from here down -->
+
     <TableRow
         android:id="@+id/tableRow5"
         android:layout_width="fill_parent"
-    	android:layout_height="fill_parent"
-        android:padding="5dip" 
-        >
-        
-        
-	    <TextView
-			
-	        android:id="@+id/label80"
-	        android:textAppearance="?android:attr/textAppearanceSmall"
-	        android:text="@string/ve80"
-	        android:layout_weight="1" />
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:padding="5dip" >
 
-	    <TextView
-	        android:id="@+id/text80"
-	        android:layout_width="wrap_content"
-	        android:textAppearance="?android:attr/textAppearanceLarge" 
-	        android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/label80"
+            android:layout_weight="1"
+            android:text="@string/ve80"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
-	</TableRow>
-	    
+        <TextView
+            android:id="@+id/text80"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
       
    <!-- Row 6 -->
     <TableRow
         android:id="@+id/tableRow6"
         android:layout_width="fill_parent"
     	android:layout_height="fill_parent"
+    	android:gravity="bottom"
         android:padding="5dip" >
 	    <TextView
 	        android:id="@+id/label90"
@@ -133,6 +130,7 @@
         android:id="@+id/tableRow7"
         android:layout_width="fill_parent"
     	android:layout_height="fill_parent"
+    	android:gravity="bottom"
 	    android:padding="5dip" >
 	    <TextView
 	        android:id="@+id/label100"
